@@ -46,3 +46,10 @@ docker network ls
 docker rmi $(docker images -q)
 docker rm $(docker ps -a -q)
 ```
+
+**Killing docker container and forcefully remove it**
+
+```
+docker container kill <container-id e.g: 93cb5edd356c>
+docker image rm csd_monitor_server
+```
