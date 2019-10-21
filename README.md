@@ -38,3 +38,11 @@ docker volume ls
 ```
 docker network ls
 ```
+
+
+**To remove forcefully in just a two commands**
+
+```
+docker rmi $(docker images -q)
+docker rm $(docker ps -a -q)
+```
