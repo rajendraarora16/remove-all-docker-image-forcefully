@@ -53,3 +53,9 @@ docker rm $(docker ps -a -q)
 docker container kill <container-id e.g: 93cb5edd356c>
 docker image rm csd_monitor_server
 ```
+
+**Removing docker repo forcefully**
+
+```
+docker rmi -f <REPO-NAME-via-docker-images-command>
+```
